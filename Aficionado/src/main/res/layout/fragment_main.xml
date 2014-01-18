@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".PaitingActivity$PlaceholderFragment">
+
+    <EditText android:id="@+id/accessionNumber"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="2000.125"/>
+
+    <Button android:id="@+id/accessionNumberGo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Get Piece"/>
+
+    <TextView android:id="@+id/item_title"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+    <com.example.aficionado.UrlImageView android:id="@+id/imageView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="2dp"
+        android:scaleType="fitXY"/>
+
+    <ListView android:id="@+id/result"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content" />
+
+    <RelativeLayout android:id="@+id/commentContainer"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:visibility="gone">
+
+        <Button android:id="@+id/post_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Post"/>
+
+        <EditText android:id="@+id/comment_input"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_toLeftOf="@id/post_button"/>
+
+        <EditText android:id="@+id/name_input"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/comment_input"
+            android:layout_toLeftOf="@id/post_button"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
